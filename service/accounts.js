@@ -35,7 +35,7 @@ const server = new ApolloServer({
   ]),
 });
 
-export default server.createHandler({ path: '/api/accounts' });
+module.exports = server.createHandler({ path: '/api/accounts' });
 
 const users = [
   {
@@ -51,9 +51,3 @@ const users = [
     username: '@complete',
   },
 ];
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};

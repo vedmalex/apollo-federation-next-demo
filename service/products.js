@@ -36,13 +36,7 @@ const server = new ApolloServer({
   ]),
 });
 
-export default server.createHandler({ path: '/api/products' });
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+module.exports = server.createHandler({ path: '/api/products' });
 
 const products = [
   {

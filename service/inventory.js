@@ -37,13 +37,7 @@ const server = new ApolloServer({
   ]),
 });
 
-export default server.createHandler({ path: '/api/inventory' });
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+module.exports = server.createHandler({ path: '/api/inventory' });
 
 const inventory = [
   { upc: '1', inStock: true },

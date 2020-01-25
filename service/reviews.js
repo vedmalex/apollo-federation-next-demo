@@ -55,13 +55,7 @@ const server = new ApolloServer({
   ]),
 });
 
-export default server.createHandler({ path: '/api/reviews' });
-
-export const config = {
-  api: {
-    bodyParser: false,
-  },
-};
+module.exports = server.createHandler({ path: '/api/reviews' });
 
 const usernames = [
   { id: '1', username: '@ada' },

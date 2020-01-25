@@ -8,6 +8,7 @@ const gateway = new ApolloGateway({
     { name: 'products', url: 'http://localhost:3000/api/products' },
     { name: 'inventory', url: 'http://localhost:3000/api/inventory' },
   ],
+  debug: true,
 });
 
 const server = new ApolloServer({
@@ -15,4 +16,10 @@ const server = new ApolloServer({
   subscriptions: false,
 });
 
-module.exports = server.createHandler({ path: '/api/graphql' });
+export default server.createHandler({ path: '/api/graphql' });
+
+export const config = {
+  api: {
+    bodyParser: false,
+  },
+};
