@@ -1,8 +1,6 @@
 {
   "name": "create-next-example-app",
   "scripts": {
-    "micro-svc": "pm2-runtime start ecosystem.config.js",
-    "micro-main": "pm2-runtime start main.config.js",
     "dev": "next",
     "build": "next build",
     "start": "next start"
@@ -11,11 +9,7 @@
     "@apollo/federation": "^0.11.3",
     "@apollo/gateway": "^0.11.7",
     "apollo-server-micro": "^2.9.16",
-    "graphql": "^14.5.8",
-    "micro": "^9.3.4",
-    "micro-cors": "^0.1.1",
     "next": "^9.2.1",
-    "pm2": "^4.2.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
