@@ -33,6 +33,8 @@ const server = new ApolloServer({
       resolvers,
     },
   ]),
+  introspection: true,
+  playground: true,
 });
 
 export default server.createHandler({ path: '/api/accounts' });

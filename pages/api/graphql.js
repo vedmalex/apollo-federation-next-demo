@@ -3,10 +3,10 @@ const { ApolloGateway } = require('@apollo/gateway');
 
 const gateway = new ApolloGateway({
   serviceList: [
-    { name: 'accounts', url: 'http://localhost:3000/api/accounts' },
-    { name: 'reviews', url: 'http://localhost:3000/api/reviews' },
-    { name: 'products', url: 'http://localhost:3000/api/products' },
-    { name: 'inventory', url: 'http://localhost:3000/api/inventory' },
+    { name: 'accounts', url: 'https://0.0.0.0/api/accounts' },
+    { name: 'reviews', url: 'https://0.0.0.0/api/reviews' },
+    { name: 'products', url: 'https://0.0.0.0/api/products' },
+    { name: 'inventory', url: 'https://0.0.0.0/api/inventory' },
   ],
   debug: true,
 });
