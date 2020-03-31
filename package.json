@@ -10,7 +10,7 @@
     "@apollo/gateway": "^0.11.7",
     "apollo-server-micro": "^2.9.16",
     "config": "^3.2.5",
-    "next": "^9.2.1",
+    "next": "^9.3.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
   }
